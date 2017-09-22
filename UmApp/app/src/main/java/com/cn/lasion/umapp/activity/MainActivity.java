@@ -48,10 +48,12 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void OneClick(View view) {
+        MobclickAgent.onEvent(mContext, "OneClick");
         startActivity(new Intent(MainActivity.this, OneAcitivity.class));
     }
 
     public void TwoClick(View view) {
+        MobclickAgent.onEvent(mContext, "TwoClick");
         startActivity(new Intent(MainActivity.this, TwoActivity.class));
     }
 
